@@ -20,7 +20,7 @@ const Contact = () => {
         e.preventDefault();
 
         // WhatsApp Logic
-        const phoneNumber = details.phone.replace(/\D/g, ''); // Remove non-digits
+        const phoneNumber = details.bookingNumber.replace(/\D/g, ''); // Remove non-digits
         // If phone number is placeholder or empty, alert user (or default to a generic one if provided)
         if (phoneNumber.length < 10) {
             alert("Please update the phone number in content.js to a valid number.");
@@ -81,7 +81,11 @@ const Contact = () => {
                                 </div>
                                 <div>
                                     <h4 className="text-lg font-bold text-slate-800 mb-1">Call Us</h4>
-                                    <p className="text-slate-600">{details.phone}</p>
+                                    <div className="flex flex-col gap-1">
+                                        {details.contactNumbers.map((num, idx) => (
+                                            <p key={idx} className="text-slate-600 font-medium">{num}</p>
+                                        ))}
+                                    </div>
                                 </div>
                             </motion.div>
 

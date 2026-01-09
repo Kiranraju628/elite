@@ -97,8 +97,9 @@ export const content = {
 
   details: {
     address: "Nanakramguda, Hyderabad",
-    phone: "+91 8867466566",
-    email: "kirankumarrajupadmaraju@gmail.com",
+    bookingNumber: "+91 7207153217", // WhatsApp Booking Number
+    contactNumbers: ["+91 9492039653", "+91 6309770712"], // Display Numbers
+    email: "team.elitewpg@gmail.com",
     mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.997528479815!2d78.3914!3d17.4483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI2JzUzLjkiTiA3OMKwMjMnMjkuMCJF!5e0!3m2!1sen!2sin!4v1631234567890!5m2!1sen!2sin",
     locationAdvantage: [
       "Colleges & Universities",
