@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { content } from '../data/content';
-import logo from '../assets/team-elite-logo.jpg';
+import logo from '../assets/hero-bg-v5.png';
 
 const Hero = () => {
     const { hero } = content;

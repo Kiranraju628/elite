@@ -6,7 +6,7 @@ export const content = {
     subtitle: "Where Safety Meets Comfort and Empowering Home for Women",
     ctaText: "Book a Visit",
     ctaLink: "#contact",
-    imageUrl: "https://images.unsplash.com/photo-1522771753037-6333d79f2203?q=80&w=2072&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1522771753037-6333d79f2203?q=80&w=2072&auto=format&fit=crop",
   },
 
   about: {
