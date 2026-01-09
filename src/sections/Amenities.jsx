@@ -24,7 +24,7 @@ const Amenities = () => {
         <section id="amenities" className="section">
             <div className="container">
                 <div className="text-center max-w-2xl mx-auto mb-16">
-                    <span className="text-purple-600 font-semibold tracking-wider text-sm uppercase">Why Choose Us</span>
+                    <span className="text-pink-600 font-semibold tracking-wider text-sm uppercase">Why Choose Us</span>
                     <h2 className="text-3xl md:text-4xl font-bold mt-2 text-slate-800">{amenities.title}</h2>
                 </div>
 
@@ -41,7 +41,7 @@ const Amenities = () => {
                             variants={item}
                             className="glass p-8 rounded-2xl shadow-sm hover:shadow-lg transition-transform border border-white/40 flex flex-col items-center text-center group"
                         >
-                            <div className="w-16 h-16 bg-purple-50 text-purple-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-purple-600 group-hover:text-white transition-colors duration-300">
+                            <div className="w-16 h-16 bg-pink-50 text-pink-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-pink-600 group-hover:text-white transition-colors duration-300">
                                 <amenity.icon size={32} />
                             </div>
                             <h3 className="text-xl font-bold mb-3 text-slate-800">{amenity.title}</h3>

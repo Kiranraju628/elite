@@ -27,7 +27,7 @@ const Hero = () => {
                     className="max-w-xl"
                 >
                     <img src={logo} alt="Team Elite Logo" className="h-24 md:h-32 mb-8 rounded-xl shadow-lg mix-blend-multiply" />
-                    <span className="inline-block py-1 px-3 rounded-full bg-purple-100 text-purple-700 text-sm font-semibold mb-6">
+                    <span className="inline-block py-1 px-3 rounded-full bg-pink-100 text-pink-700 text-sm font-semibold mb-6">
                         Premium Living for Women
                     </span>
                     <h1 className="text-5xl md:text-6xl font-bold mb-6 text-slate-800 leading-tight">

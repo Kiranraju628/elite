@@ -45,7 +45,7 @@ const Contact = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.5 }}
                         >
-                            <span className="text-purple-600 font-semibold tracking-wider text-sm uppercase">Get in Touch</span>
+                            <span className="text-pink-600 font-semibold tracking-wider text-sm uppercase">Get in Touch</span>
                             <h2 className="text-3xl md:text-4xl font-bold mt-2 mb-6 text-slate-800">Visit Us Today</h2>
                             <p className="text-slate-600 mb-12">
                                 Have questions or want to schedule a visit? Reach out to us directly or fill out the form.
@@ -60,7 +60,7 @@ const Contact = () => {
                                 transition={{ delay: 0.1 }}
                                 className="flex items-start gap-4"
                             >
-                                <div className="w-12 h-12 rounded-lg glass shadow-sm flex items-center justify-center text-purple-600 shrink-0">
+                                <div className="w-12 h-12 rounded-lg glass shadow-sm flex items-center justify-center text-pink-600 shrink-0">
                                     <MapPin />
                                 </div>
                                 <div>
@@ -76,7 +76,7 @@ const Contact = () => {
                                 transition={{ delay: 0.2 }}
                                 className="flex items-start gap-4"
                             >
-                                <div className="w-12 h-12 rounded-lg glass shadow-sm flex items-center justify-center text-purple-600 shrink-0">
+                                <div className="w-12 h-12 rounded-lg glass shadow-sm flex items-center justify-center text-pink-600 shrink-0">
                                     <Phone />
                                 </div>
                                 <div>
@@ -96,7 +96,7 @@ const Contact = () => {
                                 transition={{ delay: 0.3 }}
                                 className="flex items-start gap-4"
                             >
-                                <div className="w-12 h-12 rounded-lg glass shadow-sm flex items-center justify-center text-purple-600 shrink-0">
+                                <div className="w-12 h-12 rounded-lg glass shadow-sm flex items-center justify-center text-pink-600 shrink-0">
                                     <Mail />
                                 </div>
                                 <div>
@@ -119,7 +119,7 @@ const Contact = () => {
                             <ul className="grid sm:grid-cols-2 gap-3">
                                 {details.locationAdvantage.map((item, idx) => (
                                     <li key={idx} className="flex items-center gap-2 text-slate-700 text-sm">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-purple-500"></div>
+                                        <div className="w-1.5 h-1.5 rounded-full bg-pink-500"></div>
                                         {item}
                                     </li>
                                 ))}
@@ -144,7 +144,7 @@ const Contact = () => {
                                         name="name"
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all"
+                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition-all"
                                         placeholder="Your Name"
                                         required
                                     />
@@ -156,7 +156,7 @@ const Contact = () => {
                                         name="phone"
                                         value={formData.phone}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all"
+                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition-all"
                                         placeholder="Your Number"
                                         required
                                     />
@@ -169,7 +169,7 @@ const Contact = () => {
                                     name="email"
                                     value={formData.email}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all"
+                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition-all"
                                     placeholder="your@email.com"
                                 />
                             </div>
@@ -180,7 +180,7 @@ const Contact = () => {
                                     name="message"
                                     value={formData.message}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-purple-500 focus:ring-2 focus:ring-purple-200 outline-none transition-all"
+                                    className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:border-pink-500 focus:ring-2 focus:ring-pink-200 outline-none transition-all"
                                     placeholder="I am interested in..."
                                 ></textarea>
                             </div>

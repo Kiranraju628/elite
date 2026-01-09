@@ -5,28 +5,30 @@
 @tailwind utilities;
 
 :root {
-  --primary: #d946ef;
-  /* Magenta/Rose */
-  --primary-dark: #c026d3;
-  --secondary: #4f46e5;
-  /* Indigo */
+  --primary: #ec4899;
+  /* Pink-500 */
+  --primary-dark: #be185d;
+  /* Pink-700 */
+  --secondary: #db2777;
+  /* Pink-600 */
   --accent: #f472b6;
-  /* Pink */
-  --background: #f8fafc;
-  /* Slate 50 */
+  /* Pink-400 */
+  --background: #fdf2f8;
+  /* Pink-50 */
   --surface: #ffffff;
   --text-main: #1e293b;
   /* Slate 800 */
   --text-muted: #64748b;
   /* Slate 500 */
-  --border: #e2e8f0;
+  --border: #fbcfe8;
+  /* Pink-200 */
 
   --font-main: 'Outfit', sans-serif;
 
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --glow: 0 0 20px rgba(217, 70, 239, 0.3);
+  --glow: 0 0 20px rgba(236, 72, 153, 0.4);
 }
 
 * {
@@ -98,7 +100,7 @@ button {
 }
 
 .btn-primary {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, #ec4899, #d946ef);
   color: white;
   padding: 12px 24px;
   border-radius: 50px;

@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass shadow-sm py-4' : 'bg-transparent py-6'}`}>
             <div className="container flex justify-between items-center">
-                <a href="#" className="text-2xl font-bold bg-gradient-to-r from-purple-600 to-pink-500 bg-clip-text text-transparent" style={{ color: 'var(--primary-dark)', fontFamily: 'var(--font-main)' }}>
+                <a href="#" className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-pink-500 bg-clip-text text-transparent" style={{ color: 'var(--primary-dark)', fontFamily: 'var(--font-main)' }}>
                     Team Elite Women's<span style={{ color: 'var(--text-main)' }}> PG</span>
                 </a>
 
@@ -35,7 +35,7 @@ const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="text-sm font-medium hover:text-purple-600 transition-colors"
+                            className="text-sm font-medium hover:text-pink-600 transition-colors"
                             style={{ color: scrolled ? 'var(--text-main)' : 'var(--text-main)' }} // Always legible
                         >
                             {link.name}

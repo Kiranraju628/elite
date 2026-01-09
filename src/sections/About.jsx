@@ -48,7 +48,7 @@ const About = () => {
                             className="rounded-2xl shadow-2xl w-full h-[500px] object-cover"
                         /> {/* Increased height */}
                         <div className="absolute -bottom-8 -right-8 glass p-8 rounded-xl shadow-xl border border-slate-100 hidden md:block animate-float">
-                            <p className="text-5xl font-bold text-purple-600 mb-2">100%</p>
+                            <p className="text-5xl font-bold text-pink-600 mb-2">100%</p>
                             <p className="text-slate-500 font-medium">Safe & <br />Secure</p>
                         </div>
                     </div>
@@ -60,7 +60,7 @@ const About = () => {
                     whileInView="show"
                     viewport={{ once: true, margin: "-100px" }}
                 >
-                    <motion.span variants={fadeInUp} className="inline-block py-1 px-3 rounded-full bg-purple-100 text-purple-700 font-semibold tracking-wider text-sm uppercase mb-4">
+                    <motion.span variants={fadeInUp} className="inline-block py-1 px-3 rounded-full bg-pink-100 text-pink-700 font-semibold tracking-wider text-sm uppercase mb-4">
                         Why Choose Team Elite Women’s PG?
                     </motion.span>
                     <motion.h2 variants={fadeInUp} className="text-4xl md:text-5xl font-bold mb-8 text-slate-800 leading-tight">
@@ -76,7 +76,7 @@ const About = () => {
                     >
                         {about.whyChoose.map((feature, index) => (
                             <motion.li key={index} variants={fadeInUp} className="flex items-start gap-4 text-slate-700 font-medium text-lg">
-                                <div className="mt-1 bg-purple-100 p-1 rounded-full text-purple-600">
+                                <div className="mt-1 bg-pink-100 p-1 rounded-full text-pink-600">
                                     <CheckCircle className="w-5 h-5" />
                                 </div>
                                 {feature}
@@ -93,19 +93,19 @@ const About = () => {
                     whileInView="show"
                     viewport={{ once: true, margin: "-50px" }}
                     variants={fadeInUp}
-                    className="glass p-6 rounded-3xl border border-purple-100 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col"
+                    className="glass p-6 rounded-3xl border border-pink-100 shadow-lg hover:shadow-xl transition-shadow duration-300 h-full flex flex-col"
                 >
                     <h3 className="text-2xl font-bold mb-2 text-slate-800">{safety.title}</h3>
                     <p className="text-slate-600 mb-4 text-base leading-relaxed">{safety.description}</p>
                     <ul className="grid sm:grid-cols-2 gap-3 mb-4 flex-1">
                         {safety.features.map((item, idx) => (
                             <li key={idx} className="flex items-center gap-2 text-slate-700 font-medium text-sm">
-                                <span className="w-2 h-2 rounded-full bg-purple-500 shadow-lg shadow-purple-200"></span>
+                                <span className="w-2 h-2 rounded-full bg-pink-500 shadow-lg shadow-pink-200"></span>
                                 {item}
                             </li>
                         ))}
                     </ul>
-                    <p className="text-slate-600 text-sm leading-relaxed border-t border-purple-100 pt-3">
+                    <p className="text-slate-600 text-sm leading-relaxed border-t border-pink-100 pt-3">
                         We ensure a <strong>stress-free and secure living experience</strong> for all our residents.
                     </p>
                 </motion.div>
