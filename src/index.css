@@ -5,14 +5,14 @@
 @tailwind utilities;
 
 :root {
-  --primary: #ec4899;
-  /* Pink-500 */
-  --primary-dark: #be185d;
-  /* Pink-700 */
-  --secondary: #db2777;
+  --primary: #db2777;
   /* Pink-600 */
-  --accent: #f472b6;
-  /* Pink-400 */
+  --primary-dark: #9d174d;
+  /* Pink-800 */
+  --secondary: #be185d;
+  /* Pink-700 */
+  --accent: #ec4899;
+  /* Pink-500 */
   --background: #fdf2f8;
   /* Pink-50 */
   --surface: #ffffff;

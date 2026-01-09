@@ -25,7 +25,7 @@ const Navbar = () => {
     return (
         <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? 'glass shadow-sm py-4' : 'bg-transparent py-6'}`}>
             <div className="container flex justify-between items-center">
-                <a href="#" className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-pink-500 bg-clip-text text-transparent" style={{ color: 'var(--primary-dark)', fontFamily: 'var(--font-main)' }}>
+                <a href="#" className="text-2xl font-bold bg-gradient-to-r from-pink-700 to-pink-600 bg-clip-text text-transparent" style={{ fontFamily: 'var(--font-main)' }}>
                     Team Elite Women's PG
                 </a>
 

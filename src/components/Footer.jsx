@@ -5,7 +5,7 @@ const Footer = () => {
         <footer className="bg-slate-900 text-white py-12 border-t border-slate-800">
             <div className="container text-center">
                 <div className="mb-6">
-                    <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-400 to-pink-400 bg-clip-text text-transparent inline-block">
+                    <h2 className="text-2xl font-bold bg-gradient-to-r from-pink-600 to-pink-500 bg-clip-text text-transparent inline-block">
                         Team Elite Women's PG
                     </h2>
                 </div>
