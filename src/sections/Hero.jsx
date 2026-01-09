@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { content } from '../data/content';
+import logo from '../assets/team-elite-logo.jpg';
 
 const Hero = () => {
     const { hero } = content;
@@ -11,7 +12,7 @@ const Hero = () => {
             <div className="absolute inset-0 z-0">
                 <img
                     src={hero.imageUrl}
-                    alt="Women's PG interior"
+                    alt="Team Elite Women's PG"
                     className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-r from-white/90 to-white/30 sm:bg-white/40"></div>
@@ -25,6 +26,7 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className="max-w-xl"
                 >
+                    <img src={logo} alt="Team Elite Logo" className="h-24 md:h-32 mb-8 rounded-xl shadow-lg mix-blend-multiply" />
                     <span className="inline-block py-1 px-3 rounded-full bg-purple-100 text-purple-700 text-sm font-semibold mb-6">
                         Premium Living for Women
                     </span>
@@ -38,7 +40,7 @@ const Hero = () => {
                         <a href={hero.ctaLink} className="btn-primary text-lg px-8 py-3 rounded-full inline-block">
                             {hero.ctaText}
                         </a>
-                        <a href="#details" className="px-8 py-3 rounded-full border border-slate-300 font-medium hover:bg-white hover:shadow-md transition-all inline-block glass">
+                        <a href="#rooms" className="px-8 py-3 rounded-full border border-slate-300 font-medium hover:bg-white hover:shadow-md transition-all inline-block glass">
                             View Details
                         </a>
                     </div>
