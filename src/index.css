@@ -38,6 +38,11 @@
   scroll-behavior: smooth;
 }
 
+html {
+  scroll-padding-top: 85px;
+  /* Height of navbar + some spacing */
+}
+
 body {
   font-family: var(--font-main);
   color: var(--text-main);

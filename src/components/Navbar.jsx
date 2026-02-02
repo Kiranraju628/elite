@@ -57,6 +57,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
                         className="md:hidden absolute top-full left-0 w-full overflow-hidden bg-white shadow-xl border-t border-pink-100"
+                        style={{ zIndex: 999 }} // Force high z-index
                     >
                         <div className="flex flex-col p-6 gap-4">
                             {navLinks.map((link) => (
@@ -64,20 +65,7 @@ const Navbar = () => {
                                     key={link.name}
                                     href={link.href}
                                     className="text-lg text-slate-800 font-medium py-3 px-4 hover:bg-pink-50 rounded-xl transition-all block active:scale-95"
-                                    onClick={(e) => {
-                                        e.preventDefault();
-                                        setIsOpen(false);
-                                        const element = document.querySelector(link.href);
-                                        if (element) {
-                                            const offset = 80;
-                                            const elementPosition = element.getBoundingClientRect().top;
-                                            const offsetPosition = elementPosition + window.scrollY - offset;
-                                            window.scrollTo({
-                                                top: offsetPosition,
-                                                behavior: "smooth"
-                                            });
-                                        }
-                                    }}
+                                    onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}
                                 </a>
@@ -85,20 +73,7 @@ const Navbar = () => {
                             <a
                                 href="#contact"
                                 className="btn-primary text-center text-lg px-6 py-3 rounded-full mt-2 w-full block shadow-md active:scale-95 transition-transform"
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    setIsOpen(false);
-                                    const element = document.querySelector("#contact");
-                                    if (element) {
-                                        const offset = 80;
-                                        const elementPosition = element.getBoundingClientRect().top;
-                                        const offsetPosition = elementPosition + window.scrollY - offset;
-                                        window.scrollTo({
-                                            top: offsetPosition,
-                                            behavior: "smooth"
-                                        });
-                                    }
-                                }}
+                                onClick={() => setIsOpen(false)}
                             >
                                 Book Now
                             </a>
