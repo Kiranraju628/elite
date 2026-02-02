@@ -29,7 +29,6 @@ const Navbar = () => {
                     Team Elite Women's PG
                 </a>
 
-                {/* Desktop Menu */}
                 <div className="hidden md:flex gap-8 items-center">
                     {navLinks.map((link) => (
                         <a
@@ -45,7 +44,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Toggle */}
-                <button className="md:hidden text-gray-800" onClick={() => setIsOpen(!isOpen)}>
+                <button className="md:hidden text-gray-800 cursor-pointer" onClick={() => setIsOpen(!isOpen)}>
                     {isOpen ? <X /> : <Menu />}
                 </button>
             </div>
@@ -57,19 +56,26 @@ const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden glass border-t"
+                        className="md:hidden absolute top-full left-0 w-full overflow-hidden"
                     >
-                        <div className="flex flex-col p-4 gap-4">
+                        <div className="glass flex flex-col p-6 gap-4 border-t border-white/20 shadow-xl bg-white/95 backdrop-blur-xl">
                             {navLinks.map((link) => (
                                 <a
                                     key={link.name}
                                     href={link.href}
-                                    className="text-gray-800 font-medium"
+                                    className="text-lg text-slate-800 font-medium py-2 px-4 hover:bg-pink-50 rounded-lg transition-colors block"
                                     onClick={() => setIsOpen(false)}
                                 >
                                     {link.name}
                                 </a>
                             ))}
+                            <a
+                                href="#contact"
+                                className="btn-primary text-center text-lg px-6 py-3 rounded-full mt-2 w-full block shadow-md"
+                                onClick={() => setIsOpen(false)}
+                            >
+                                Book Now
+                            </a>
                         </div>
                     </motion.div>
                 )}
